@@ -1,0 +1,108 @@
+.header-container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+.top-bar {
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nie-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nie-logo .logo-text-small {
+  font-size: 8px;
+  max-width: 60px;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.foundation-logo {
+  border-left: 2px solid #ddd;
+  padding-left: 20px;
+}
+
+.foundation-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.foundation-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.foundation-name {
+  color: #ff8c00;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.foundation-details {
+  font-size: 8px;
+  color: #666;
+}
+
+.navbar {
+  margin: 0 40px;
+  border: 1px solid #1e3a8a;
+  border-radius: 10px;
+  padding: 0 30px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.nav-line-indicator {
+  position: absolute;
+  left: 20px;
+  bottom: 12px;
+  height: 4px;
+  width: 50px;
+  background-color: #2563eb;
+  border-radius: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-links li a:hover, .nav-links li a.active {
+    color: #000;
+}
