@@ -43,8 +43,8 @@
 }
 
 .foundation-logo img {
-    height: 50px;
-    width: auto;
+  height: 50px;
+  width: auto;
 }
 
 .foundation-text {
@@ -74,7 +74,7 @@
   justify-content: space-between;
   background-color: white;
   position: relative;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .nav-line-indicator {
@@ -98,11 +98,129 @@
 .nav-links li a {
   text-decoration: none;
   color: #333;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s;
 }
 
-.nav-links li a:hover, .nav-links li a.active {
-    color: #000;
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #2563eb;
 }
+
+@media (max-width: 1024px) {
+  .top-bar {
+    padding: 10px 20px;
+  }
+
+  .navbar {
+    margin: 0 20px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .top-bar {
+    padding: 10px 10px;
+  }
+
+  .logos {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .logo {
+    gap: 5px;
+    flex: 0 1 auto;
+  }
+
+  .foundation-logo {
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+    flex: 0 1 auto;
+    gap: 5px;
+  }
+
+  .navbar {
+    margin: 0 10px;
+    height: auto;
+    padding: 10px;
+    min-height: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 15px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-line-indicator {
+    display: none;
+  }
+
+  .nav-links li a {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .nie-logo img,
+  .foundation-logo img {
+    height: 30px;
+  }
+
+  .logo-text-small {
+    font-size: 6px;
+    max-width: 45px;
+  }
+
+  .foundation-name {
+    font-size: 8px;
+  }
+
+  .foundation-details {
+    font-size: 5px;
+    display: block;
+    zoom: 0.8;
+  }
+
+  .navbar {
+    margin: 0 5px;
+    padding: 5px;
+  }
+
+  .nav-links {
+    gap: 8px 10px;
+  }
+
+  .nav-links li a {
+    font-size: 11px;
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .logos {
+    gap: 5px;
+  }
+
+  .foundation-logo {
+    padding-left: 5px;
+  }
+
+  .nie-logo img,
+  .foundation-logo img {
+    height: 25px;
+  }
+}
+
